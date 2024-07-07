@@ -25,28 +25,28 @@
 }
 
 /* Header */
-.page__header {
+.page_header {
     grid-area: header;
     display: flex;
 }
 
-.page__logo {
+.page_logo {
     flex-shrink: 0;
 }
 
-.page__nav {
+.page_nav {
     flex-grow: 1;
 }
 
 /* Body + aside */
-.page__body {
+.page_body {
     grid-area: body;
     background-color: var(--off-bg);
     box-shadow: 0 0 0 1rem var(--off-bg);
     overflow-wrap: break-word;
 }
 
-.page__aside {
+.page_aside {
     grid-area: aside;
     color: var(--off-fg);
     position: sticky;
@@ -57,6 +57,6 @@
 }
 
 /* Footer */
-.page__footer {
+.page_footer {
     grid-area: footer;
 }

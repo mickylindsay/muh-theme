@@ -1,11 +1,11 @@
 {{ define "main" }}
-    <header class="content__header">
+    <header class="content_header">
         <h1>{{ .Title | markdownify }}</h1>
     </header>
-    <div class="content__body">
+    <div class="content_body">
         {{ .Content }}
     </div>
-    <footer class="content__footer"></footer>
+    <footer class="content_footer"></footer>
 {{ end }}
 
 {{define "aside" }}

@@ -5,22 +5,22 @@
     </head>
     <body>
         <div class="page">
-            <header class="page__header">
+            <header class="page_header">
                 {{- partial "header.html" . -}}
             </header>
-            <section class="page__body">
+            <section class="page_body">
                 {{- block "main" . }}{{- end }}
             </section>
-            <section class="page__aside">
-                <div class="aside__about">
+            <section class="page_aside">
+                <div class="aside_about">
                     {{- partial "about.html" . -}}
                 </div>
                 <hr>
-                <div class="aside__content">
+                <div class="aside_content">
                     {{- block "aside" . }}{{- end }}
                 </div>
             </section>
-            <footer class="page__footer">
+            <footer class="page_footer">
                 {{- partial "footer.html" . -}}
             </footer>
         </div>

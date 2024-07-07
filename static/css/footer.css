@@ -1,7 +1,7 @@
-.page__footer {
+.page_footer {
     color: var(--off-fg);
 }
 
-.page__footer p {
+.page_footer p {
     margin: 0;
 }
