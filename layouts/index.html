@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{- range ( where site.RegularPages  "Type" "posts"| first 3 ) }}
+    <article class="post">
+      <h1 class="post__header"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a><span class="post__header_extra"> - <i class="date">{{ .Date.Format "2 January 2006" }}</i> - <code>{{ delimit .Params.tags ", "}}</code></span></h1>
+      {{ .Summary }}
+    </article>
+  {{ end }}
+  <hr>
+  {{ .Content }}
+{{ end }}
