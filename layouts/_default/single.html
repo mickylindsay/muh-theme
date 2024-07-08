@@ -1,5 +1,6 @@
 {{ define "main" }}
     <header class="content_header">
+        <span class="content_read_time">{{ .ReadingTime }} minute read</span>
         <h1>{{ .Title | markdownify }}</h1>
     </header>
     <div class="content_body">
